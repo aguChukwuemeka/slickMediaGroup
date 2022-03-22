@@ -51,7 +51,7 @@ function App() {
       <Navbar />
       <Banner />
       <nav className="navbar my-3 container">
-        <span className='py-2'>Search</span>
+        <span className="py-2">Search</span>
         <input
           style={{ width: "100%" }}
           type="search"
@@ -62,7 +62,11 @@ function App() {
       </nav>
 
       <div className="container-fluid">
-        {loading ? <>loading...</> : <Movies movies={data} />}
+        {loading ? (
+          <div className="d-flex justify-content-center">loading...</div>
+        ) : (
+          <Movies movies={data} />
+        )}
       </div>
     </div>
   );
