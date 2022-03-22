@@ -10,12 +10,8 @@ function App() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const [query, setQuery] = useState("star wars");
-  // const [activateModal, setActivateModal] = useState(false);
-  // const [detail, setShowDetail] = useState(false);
-  // const [detailRequest, setDetailRequest] = useState(false);
 
-  const API_KEY = "ce762116";
-  // cc74c319;
+  const API_KEY = "cc74c319";
 
   useEffect(() => {
     try {
@@ -47,7 +43,8 @@ function App() {
     e.preventDefault();
     setQuery(e.target.value);
   };
-  console.log(query);
+
+  console.log(error);
 
   return (
     <div>
